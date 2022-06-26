@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <form #decisionForm="ngForm">
+        <div class="form-group">
+          <label for="playerName">Name</label>
+          <input type="text" required ngModel class="form-control" id="playerName" name="playerName" placeholder="Enter your name" (focusout)="preferredName($event)">
+        </div>
+        <div>
+          <h5>How to play the game</h5>
+          <ul>
+            <li>Choose your own adventure path by picking between the choices displayed on the screen in order to progress to the next
+              set of choices, until you get to one of the endings
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div id="Q" class="form-group">
+          <div class="alert alert-primary" role="alert" name="QuestionText" id="QuestionText">
+            {{nextQuestion}}
+          </div> 
+            <button type="button" [disabled] = "disableBtnYes" class="btn btn-outline-success mr-4" (click)="onChoicePicked( nextQuestion, true)">Yes</button>
+            <button type="button" [disabled] = "disableBtnNo" class="btn btn-outline-danger" (click)="onChoicePicked( nextQuestion, false)">No</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-4">
+      <img src="../../assets/Img1.png" alt="img1">
+    </div>
+  </div>
+</div>
