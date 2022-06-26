@@ -12,4 +12,4 @@
 `http://localhost:5000/`
 
 # Screenshots 
-[Home Page](!https://github.com/pabitrosingh/doughnut/blob/master/Documents/HomeScreen.png)
+![Home Page](https://github.com/pabitrosingh/doughnut/blob/master/Documents/HomeScreen.png)
