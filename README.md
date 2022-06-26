@@ -1,5 +1,5 @@
 
-# Steps to build
+# Steps to getting started
 
 - Clone the Repo.
 - Install all depedency `dotnet restore`
