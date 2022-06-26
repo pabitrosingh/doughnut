@@ -1,4 +1,21 @@
 
+# Steps to build
+
+- Clone the Repo.
+- Install all depedency `dotnet restore`
+- Install all Node.js modules if not dont `npm install`
+- Set up your Database
+- Supply the required database connection string
+- Build the app `dotnet build`
+- Run the app `dotnet run`
+
+# Requirement 
+
+- .Net Core SDK 5.0
+- Node.JS 
+- MongoDB local / Cloud
+
+
 # to Build docker image
 
 `docker build -t doughnut .`
