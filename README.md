@@ -9,12 +9,18 @@
 - Build the app `dotnet build`
 - Run the app `dotnet run`
 
-# Requirement 
+# Requirement
 
 - .Net Core SDK 5.0
-- Node.JS 
+- Node.JS
 - MongoDB local / Cloud
 
+# To run mongo DB in your local docker
+
+`docker run -p 27017:27017 --name my-mongo -d mongo:latest`
+
+- connect to your local mongo db from compass `mongodb://localhost:27017`
+- create a Database `doughnut` and a Collection `doughnut`
 
 # to Build docker image
 
@@ -28,5 +34,6 @@
 
 `http://localhost:5000/`
 
-# Screenshots 
+# Screenshots
+
 ![Home Page](https://github.com/pabitrosingh/doughnut/blob/master/Documents/HomeScreen.png)
