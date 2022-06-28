@@ -28,4 +28,18 @@
       <img src="../../assets/Img1.png" alt="img1">
     </div>
   </div>
+  <div class="row" *ngIf="choosenPath">
+    <div class="col-8">
+      
+      <div class="alert alert-success" role="alert">
+        <p>Path you have taken</p>
+        <p>Name: {{choosenPath.playerName}}</p>
+        <ul>
+          <li *ngFor="let item of choosenPath.decisions; index as i;">
+            <span>{{item.question}}</span> --> <span>{{item.choice}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

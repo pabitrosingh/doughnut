@@ -27,6 +27,7 @@ export class HomeComponent {
   disableBtnNo: boolean = false;
   displayResult: boolean = false;
   decisionHelper = new DecisionHelper();
+  choosenPath: any = null;
 
   onChoicePicked(question: string, choice:boolean){
     if(question.trim() === "Do I want a Doughnut?" && choice == false){
@@ -94,7 +95,8 @@ export class HomeComponent {
     const headers: HttpHeaders = new  HttpHeaders();
     headers.set('Content-Type', 'application/json');
     this.http.post(this.baseUrl + 'Doughnut', this.decisionHelper,{ headers: headers }).subscribe(result => {
-      // this.resp = result;
+      console.log('result',result);
+      this.choosenPath = result as DecisionHelper;
     }, error => console.error(error));
   }
 
